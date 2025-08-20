@@ -1,5 +1,4 @@
 import { Heart, Phone } from 'lucide-react';
-import governmentSeal from '/nodogmoms-satire-project/assets/government-seal.png';
 
 const Footer = () => {
   return (
@@ -11,7 +10,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <img 
-                src={governmentSeal} 
+                src="/nodogmoms-satire-project/assets/government-seal.png"
                 alt="IMCS Seal" 
                 className="h-10 w-10 brightness-0 invert"
               />
