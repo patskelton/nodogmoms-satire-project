@@ -1,4 +1,6 @@
 import { Crown, Heart, Calendar, MapPin } from 'lucide-react';
+import daisyBeagle from '@/assets/daisy-beagle.png';
+import rubyBorderCollie from '@/assets/ruby-border-collie.png';
 
 const HallOfDogMoms = () => {
   const dogMoms = [
@@ -33,7 +35,7 @@ const HallOfDogMoms = () => {
       location: "Portland, OR",
       offspring: 15,
       litters: 4,
-      image: "https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=400&h=400&fit=crop&crop=face",
+      image: daisyBeagle,
       specialties: ["Patient teaching", "Consistent nurturing", "Multi-generational care"],
       achievements: ["Most Prolific Mother 2024", "Puppy Socialization Expert", "IMCS Research Participant"],
       bio: "Daisy's patient approach to puppy rearing has made her offspring among the most well-adjusted dogs in our database. She exemplifies maternal excellence."
@@ -57,7 +59,7 @@ const HallOfDogMoms = () => {
       location: "Denver, CO",
       offspring: 9,
       litters: 2,
-      image: "https://images.unsplash.com/photo-1551628011-dc2d17d29ab0?w=400&h=400&fit=crop&crop=face",
+      image: rubyBorderCollie,
       specialties: ["Advanced puppy training", "Problem-solving skills", "Educational leadership"],
       achievements: ["Master Trainer Mother", "IMCS Hall of Fame", "Lifetime Achievement Award"],
       bio: "Ruby combines her Border Collie intelligence with exceptional maternal instincts, teaching her puppies advanced skills that set them apart from their peers."
