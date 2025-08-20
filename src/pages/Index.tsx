@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { AlertTriangle, Shield, Phone, FileText } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import heroImage from '/nodogmoms-satire-project/assets/hero-dog.png';
+import heroImage from '/assets/hero-dog.png';
 
 const Index = () => {
   return (
@@ -28,7 +28,7 @@ const Index = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <Button asChild size="lg" className="bg-white text-government-navy hover:bg-white/90">
+                <Button asChild className="bg-white text-government-navy hover:bg-white/90" size="lg">
                   <Link to="/quiz">
                     <FileText className="mr-2 h-5 w-5" />
                     Take the Test
