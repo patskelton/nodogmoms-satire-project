@@ -1,6 +1,6 @@
 import { Crown, Heart, Calendar, MapPin } from 'lucide-react';
-import daisyBeagle from '/nodogmoms-satire-project/assets/daisy-beagle.png';
-import rubyBorderCollie from '/nodogmoms-satire-project/assets/ruby-border-collie.png';
+import daisyBeagle from '/assets/daisy-beagle.png';
+import rubyBorderCollie from '/assets/ruby-border-collie.png';
 
 const HallOfDogMoms = () => {
   const dogMoms = [
@@ -34,215 +34,177 @@ const HallOfDogMoms = () => {
       age: "5 years",
       location: "Portland, OR",
       offspring: 15,
-      litters: 4,
+      litters: 3,
       image: daisyBeagle,
-      specialties: ["Patient teaching", "Consistent nurturing", "Multi-generational care"],
-      achievements: ["Most Prolific Mother 2024", "Puppy Socialization Expert", "IMCS Research Participant"],
-      bio: "Daisy's patient approach to puppy rearing has made her offspring among the most well-adjusted dogs in our database. She exemplifies maternal excellence."
-    },
-    {
-      name: "Bella",
-      breed: "Labrador Mix",
-      age: "3 years",
-      location: "Seattle, WA",
-      offspring: 6,
-      litters: 1,
-      image: "https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=400&h=400&fit=crop&crop=face",
-      specialties: ["First-time mother excellence", "Natural birthing", "Intuitive care"],
-      achievements: ["Rising Star Mother", "Natural Birth Advocate", "Youth Excellence Award"],
-      bio: "Despite being a first-time mother, Bella showed remarkable intuitive maternal skills. Her natural approach to puppy care serves as inspiration for others."
+      specialties: ["Exceptional nurturing", "Patient with young", "Natural teacher"],
+      achievements: ["Top Breeder Recognition", "Maternal Excellence Award", "Breed Ambassador"],
+      bio: "Daisy's patient and nurturing approach has resulted in healthy, well-socialized puppies. Her natural teaching abilities help puppies develop properly."
     },
     {
       name: "Ruby",
       breed: "Border Collie",
       age: "7 years",
-      location: "Denver, CO",
-      offspring: 9,
+      location: "Seattle, WA",
+      offspring: 10,
       litters: 2,
       image: rubyBorderCollie,
-      specialties: ["Advanced puppy training", "Problem-solving skills", "Educational leadership"],
-      achievements: ["Master Trainer Mother", "IMCS Hall of Fame", "Lifetime Achievement Award"],
-      bio: "Ruby combines her Border Collie intelligence with exceptional maternal instincts, teaching her puppies advanced skills that set them apart from their peers."
+      specialties: ["High energy care", "Intelligent training", "Protective instincts"],
+      achievements: ["Working Dog Excellence", "Best Mother 2022", "Agility Champion"],
+      bio: "Ruby combines her working dog intelligence with exceptional maternal care, creating puppies that are both smart and well-adjusted."
     },
     {
-      name: "Rosie",
+      name: "Bella",
+      breed: "Labrador Mix",
+      age: "5 years",
+      location: "Denver, CO",
+      offspring: 18,
+      litters: 4,
+      image: "https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=400&h=400&fit=crop&crop=face",
+      specialties: ["Multiple successful litters", "Calm demeanor", "Strong maternal bond"],
+      achievements: ["Prolific Mother Award", "Community Pet of the Year", "Rescue Success Story"],
+      bio: "Bella's calm and patient nature has made her an exceptional mother through four successful litters. She demonstrates unwavering dedication to each puppy."
+    },
+    {
+      name: "Sophie",
       breed: "Australian Cattle Dog",
       age: "4 years",
       location: "Phoenix, AZ",
-      offspring: 7,
-      litters: 2,
+      offspring: 6,
+      litters: 1,
       image: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&h=400&fit=crop&crop=face",
-      specialties: ["High energy nurturing", "Athletic conditioning", "Adventure preparation"],
-      achievements: ["Active Mother of the Year", "Outdoor Skills Educator", "Fitness Role Model"],
-      bio: "Rosie ensures her puppies are physically and mentally prepared for active lifestyles, embodying the perfect balance of care and conditioning."
+      specialties: ["First-time excellence", "Strong protective instincts", "Active parenting"],
+      achievements: ["New Mother Award", "Rising Star 2024", "Breed Representative"],
+      bio: "Despite being a first-time mother, Sophie's natural instincts and protective nature have made her an outstanding parent to her first litter."
     }
   ];
 
   return (
-    <div className="min-h-screen py-16">
-      <div className="container mx-auto px-4 max-w-7xl">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <div className="flex items-center justify-center gap-2 text-government-blue mb-4">
-            <Crown className="h-8 w-8" />
-            <span className="text-sm font-semibold uppercase tracking-wider">
-              Excellence Recognition
-            </span>
+    <div className="min-h-screen bg-muted/30">
+      {/* Header */}
+      <section className="py-12 bg-government-navy text-white">
+        <div className="container mx-auto px-4 text-center">
+          <div className="flex justify-center items-center gap-3 mb-6">
+            <Crown className="h-8 w-8 text-alert-yellow" />
+            <h1 className="text-4xl md:text-5xl font-bold">
+              Hall of Dog Moms
+            </h1>
+            <Crown className="h-8 w-8 text-alert-yellow" />
           </div>
-          
-          <h1 className="text-4xl md:text-5xl font-bold text-government-navy mb-6">
-            The Hall of Dog Moms
-          </h1>
-          
-          <p className="text-xl text-government-gray leading-relaxed max-w-3xl mx-auto">
-            Celebrating actual dog mothers—female dogs who have successfully given birth to 
-            and raised puppies. These remarkable canines demonstrate true maternal excellence 
-            and biological authenticity.
+          <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+            Celebrating the true mothers of the canine world. These exemplary dogs demonstrate 
+            what real maternal care looks like - no human delusions required.
           </p>
-        </div>
-
-        {/* Introduction */}
-        <div className="clinical-card bg-government-navy text-white mb-12">
-          <h2 className="text-2xl font-semibold mb-4 flex items-center gap-2">
-            <Heart className="h-6 w-6 text-alert-red" />
-            What Makes a True Dog Mom?
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-base">
-            <div>
-              <h3 className="font-semibold mb-2">Biological Requirements:</h3>
-              <ul className="space-y-1 text-sm opacity-90">
-                • Must be female canine (Canis lupus familiaris)
-                • Must have successfully carried pregnancy to term
-                • Must have given birth to live puppies
-                • Must demonstrate maternal care behaviors
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-semibold mb-2">Recognition Criteria:</h3>
-              <ul className="space-y-1 text-sm opacity-90">
-                • Verified birth records and documentation
-                • Demonstrated exceptional maternal behavior
-                • Positive impact on puppy development
-                • Nomination by veterinary professionals
-              </ul>
-            </div>
+          <div className="mt-8 p-4 bg-government-blue/20 rounded-lg max-w-2xl mx-auto">
+            <p className="text-sm italic">
+              "Only dogs can be the mothers of dogs. These remarkable females prove that 
+              maternal excellence comes naturally to the right species."
+            </p>
+            <p className="text-xs mt-2 text-alert-yellow">
+              — Institute for Maternal Canine Studies
+            </p>
           </div>
         </div>
+      </section>
 
-        {/* Dog Moms Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {dogMoms.map((dog, index) => (
-            <div className="clinical-card hover:shadow-lg transition-shadow" key={index}>
-              {/* Photo */}
-              <div className="relative mb-4">
-                <img 
-                  src={dog.image} 
-                  alt={`${dog.name}, a ${dog.breed} and verified dog mom`}
-                  className="w-full h-64 object-cover rounded-lg"
-                />
-                <div className="absolute top-3 right-3 bg-government-navy text-white px-2 py-1 rounded text-xs font-bold">
-                  VERIFIED DOG MOM
-                </div>
-                <div className="absolute bottom-3 left-3 bg-alert-red text-white px-2 py-1 rounded text-xs font-bold transform -rotate-2">
-                  IMCS REGISTRY
-                </div>
-              </div>
-
-              {/* Name and Basic Info */}
-              <div className="text-center mb-4">
-                <h3 className="text-2xl font-bold text-government-navy mb-1">{dog.name}</h3>
-                <p className="text-government-gray font-medium">{dog.breed}</p>
-                <div className="flex items-center justify-center gap-4 text-sm text-government-gray mt-2">
-                  <div className="flex items-center gap-1">
-                    <Calendar className="h-4 w-4" />
-                    {dog.age}
+      {/* Dog Moms Grid */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {dogMoms.map((mom, index) => (
+              <div key={index} className="clinical-card hover:shadow-xl transition-all duration-300">
+                {/* Header with Crown */}
+                <div className="relative">
+                  <Crown className="absolute top-4 right-4 h-6 w-6 text-alert-yellow z-10" />
+                  <div className="relative overflow-hidden rounded-t-lg">
+                    <img 
+                      src={mom.image} 
+                      alt={`${mom.name}, a ${mom.breed} and exemplary dog mother`}
+                      className="w-full h-64 object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                   </div>
-                  <div className="flex items-center gap-1">
-                    <MapPin className="h-4 w-4" />
-                    {dog.location}
+                  
+                  {/* Name Badge */}
+                  <div className="absolute bottom-4 left-4 bg-white/95 backdrop-blur-sm rounded-lg p-3">
+                    <h3 className="font-bold text-lg text-government-navy">{mom.name}</h3>
+                    <p className="text-sm text-government-gray">{mom.breed}</p>
                   </div>
                 </div>
-              </div>
 
-              {/* Statistics */}
-              <div className="grid grid-cols-2 gap-4 mb-4">
-                <div className="text-center p-3 bg-government-blue/10 rounded-lg">
-                  <div className="text-2xl font-bold text-government-blue">{dog.offspring}</div>
-                  <div className="text-xs text-government-gray uppercase tracking-wider">Puppies</div>
+                {/* Stats */}
+                <div className="p-6">
+                  <div className="grid grid-cols-2 gap-4 mb-6">
+                    <div className="text-center p-3 bg-muted/50 rounded-lg">
+                      <Heart className="h-5 w-5 text-government-blue mx-auto mb-2" />
+                      <div className="text-2xl font-bold text-government-navy">{mom.offspring}</div>
+                      <div className="text-xs text-government-gray">Puppies</div>
+                    </div>
+                    <div className="text-center p-3 bg-muted/50 rounded-lg">
+                      <Calendar className="h-5 w-5 text-government-blue mx-auto mb-2" />
+                      <div className="text-2xl font-bold text-government-navy">{mom.litters}</div>
+                      <div className="text-xs text-government-gray">Litters</div>
+                    </div>
+                  </div>
+
+                  {/* Location & Age */}
+                  <div className="flex items-center gap-4 mb-4 text-sm text-government-gray">
+                    <div className="flex items-center gap-1">
+                      <MapPin className="h-4 w-4" />
+                      {mom.location}
+                    </div>
+                    <div>Age: {mom.age}</div>
+                  </div>
+
+                  {/* Bio */}
+                  <p className="text-sm text-government-gray-dark mb-4 leading-relaxed">
+                    {mom.bio}
+                  </p>
+
+                  {/* Specialties */}
+                  <div className="mb-4">
+                    <h4 className="font-semibold text-government-navy mb-2 text-sm">Maternal Specialties:</h4>
+                    <div className="flex flex-wrap gap-1">
+                      {mom.specialties.map((specialty, idx) => (
+                        <span key={idx} className="px-2 py-1 bg-government-blue/10 text-government-blue text-xs rounded-full">
+                          {specialty}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Achievements */}
+                  <div>
+                    <h4 className="font-semibold text-government-navy mb-2 text-sm">Achievements:</h4>
+                    <ul className="space-y-1">
+                      {mom.achievements.map((achievement, idx) => (
+                        <li key={idx} className="text-xs text-government-gray-dark flex items-start gap-2">
+                          <Crown className="h-3 w-3 text-alert-yellow mt-0.5 flex-shrink-0" />
+                          {achievement}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
-                <div className="text-center p-3 bg-government-blue/10 rounded-lg">
-                  <div className="text-2xl font-bold text-government-blue">{dog.litters}</div>
-                  <div className="text-xs text-government-gray uppercase tracking-wider">Litters</div>
-                </div>
               </div>
-
-              {/* Specialties */}
-              <div className="mb-4">
-                <h4 className="font-semibold text-government-navy mb-2 text-sm">Specialties:</h4>
-                <div className="flex flex-wrap gap-1">
-                  {dog.specialties.map((specialty, idx) => (
-                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded" key={idx}>
-                      {specialty}
-                    </span>
-                  ))}
-                </div>
-              </div>
-
-              {/* Achievements */}
-              <div className="mb-4">
-                <h4 className="font-semibold text-government-navy mb-2 text-sm">Achievements:</h4>
-                <ul className="space-y-1">
-                  {dog.achievements.map((achievement, idx) => (
-                    <li className="text-xs text-government-gray-dark flex items-start gap-2" key={idx}>
-                      <Crown className="h-3 w-3 text-alert-yellow flex-shrink-0 mt-0.5" />
-                      {achievement}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Bio */}
-              <div className="border-t border-border pt-4">
-                <p className="text-sm text-government-gray-dark leading-relaxed italic">
-                  {dog.bio}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Nomination Section */}
-        <div className="mt-16 clinical-card bg-government-blue/10 border border-government-blue/20">
-          <h2 className="text-2xl font-semibold text-government-navy mb-4">
-            Nominate a True Dog Mom
-          </h2>
-          <p className="text-base text-government-gray-dark leading-relaxed mb-6">
-            Know a female dog who exemplifies maternal excellence? The IMCS Hall of Dog Moms 
-            welcomes nominations from veterinarians, breeders, and dog care professionals. 
-            All nominees must meet strict biological and behavioral criteria.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
-            <div>
-              <h3 className="font-semibold text-government-navy mb-2">Required Documentation:</h3>
-              <ul className="space-y-1 text-government-gray-dark">
-                • Veterinary birth records
-                • Professional behavioral assessment
-                • Photographic evidence of maternal care
-                • Health clearances and genetic testing
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-semibold text-government-navy mb-2">Nomination Process:</h3>
-              <ul className="space-y-1 text-government-gray-dark">
-                • Submit via IMCS professional portal
-                • Peer review by veterinary board
-                • Site visit and verification process
-                • Annual recognition ceremony
-              </ul>
-            </div>
+            ))}
           </div>
         </div>
-      </div>
+      </section>
+
+      {/* Bottom Section */}
+      <section className="py-12 bg-government-navy text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-2xl font-bold mb-4">The Science is Clear</h2>
+          <p className="text-white/90 max-w-2xl mx-auto">
+            These remarkable mothers demonstrate the natural maternal behaviors that only 
+            occur within the same species. Each represents thousands of years of evolutionary 
+            maternal instincts - something no human can replicate or claim.
+          </p>
+          <div className="mt-6 text-alert-yellow font-mono text-sm">
+            Institute for Maternal Canine Studies - Preserving Scientific Accuracy
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
