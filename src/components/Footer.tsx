@@ -1,5 +1,5 @@
 import { Heart, Phone } from 'lucide-react';
-import governmentSeal from '@/assets/government-seal.png';
+import governmentSeal from '/assets/government-seal.png';
 
 const Footer = () => {
   return (
@@ -26,7 +26,7 @@ const Footer = () => {
               pet guardianship contexts.
             </p>
           </div>
-
+          
           {/* Quick Links */}
           <div className="space-y-4">
             <h3 className="font-semibold text-lg">Quick Actions</h3>
@@ -34,42 +34,42 @@ const Footer = () => {
               <div>📞 Crisis Hotline: 1-800-NOT-A-MOM</div>
               <div>📧 Report Cases: cmdd@imcs.gov</div>
               <div>📋 Download Pamphlet</div>
-              <div>🔬 Research Portal</div>
+              <div>🔍 Take Assessment</div>
             </div>
           </div>
-
-          {/* Emergency Notice */}
+          
+          {/* Legal */}
           <div className="space-y-4">
-            <h3 className="font-semibold text-lg text-alert-yellow">Emergency Notice</h3>
-            <div className="bg-white/10 border border-white/20 rounded-lg p-4 text-sm">
-              <p className="mb-2">
-                <strong>If you are experiencing acute CMDD symptoms:</strong>
-              </p>
-              <ul className="space-y-1 text-xs opacity-90">
-                <li>• Call the hotline immediately</li>
-                <li>• Remove any "dog mom" merchandise</li>
-                <li>• Practice saying "I am a dog guardian"</li>
-                <li>• Seek support from actual mothers</li>
-              </ul>
+            <h3 className="font-semibold text-lg">Legal</h3>
+            <div className="space-y-2 text-sm">
+              <div>Privacy Policy</div>
+              <div>Terms of Service</div>
+              <div>FOIA Requests</div>
+              <div>Accessibility</div>
             </div>
           </div>
         </div>
-
-        {/* Sections removed per user request */}
-
+        
         {/* Bottom Bar */}
-        <div className="border-t border-white/20 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm opacity-75">
-          <div>
-            © 2024 Institute for Maternal Canine Studies (Satirical). All rights reserved.
-          </div>
-          <div className="flex gap-4">
-            <span>Privacy Policy*</span>
-            <span>Terms of Service*</span>
-            <span>Contact IMCS*</span>
+        <div className="pt-8 border-t border-white/20">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <div className="text-sm opacity-90">
+              © 2025 Institute for Maternal Canine Studies. All rights reserved.
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              Made with <Heart className="h-4 w-4 text-red-400" /> for scientific accuracy
+            </div>
           </div>
         </div>
-        <div className="text-xs opacity-50 mt-2 text-center">
-          *These links don't actually work because this is a satirical website.
+        
+        {/* Disclaimer */}
+        <div className="mt-8 pt-8 border-t border-white/20">
+          <p className="text-xs text-white/70 text-center leading-relaxed">
+            This website is a satirical public service announcement about proper pet terminology. 
+            The Institute for Maternal Canine Studies is a fictional organization created for educational purposes. 
+            All statistics and claims are fabricated for comedic effect. Please treat your pets with love and respect, 
+            regardless of what you call yourself.
+          </p>
         </div>
       </div>
     </footer>
