@@ -1,6 +1,4 @@
 import { Crown, Heart, Calendar, MapPin } from 'lucide-react';
-import daisyBeagle from '/assets/daisy-beagle.png';
-import rubyBorderCollie from '/assets/ruby-border-collie.png';
 
 const HallOfDogMoms = () => {
   const dogMoms = [
@@ -35,7 +33,7 @@ const HallOfDogMoms = () => {
       location: "Portland, OR",
       offspring: 15,
       litters: 3,
-      image: daisyBeagle,
+      image: "/nodogmoms-satire-project/assets/daisy-beagle.png",
       specialties: ["Exceptional nurturing", "Patient with young", "Natural teacher"],
       achievements: ["Top Breeder Recognition", "Maternal Excellence Award", "Breed Ambassador"],
       bio: "Daisy's patient and nurturing approach has resulted in healthy, well-socialized puppies. Her natural teaching abilities help puppies develop properly."
@@ -47,7 +45,7 @@ const HallOfDogMoms = () => {
       location: "Seattle, WA",
       offspring: 10,
       litters: 2,
-      image: rubyBorderCollie,
+      image: "/nodogmoms-satire-project/assets/ruby-border-collie.png",
       specialties: ["High energy care", "Intelligent training", "Protective instincts"],
       achievements: ["Working Dog Excellence", "Best Mother 2022", "Agility Champion"],
       bio: "Ruby combines her working dog intelligence with exceptional maternal care, creating puppies that are both smart and well-adjusted."
@@ -111,7 +109,7 @@ const HallOfDogMoms = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {dogMoms.map((mom, index) => (
-              <div key={index} className="clinical-card hover:shadow-xl transition-all duration-300">
+              <div className="clinical-card hover:shadow-xl transition-all duration-300" key={index}>
                 {/* Header with Crown */}
                 <div className="relative">
                   <Crown className="absolute top-4 right-4 h-6 w-6 text-alert-yellow z-10" />
@@ -121,7 +119,7 @@ const HallOfDogMoms = () => {
                       alt={`${mom.name}, a ${mom.breed} and exemplary dog mother`}
                       className="w-full h-64 object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                   </div>
                   
                   {/* Name Badge */}
@@ -152,7 +150,7 @@ const HallOfDogMoms = () => {
                       <MapPin className="h-4 w-4" />
                       {mom.location}
                     </div>
-                    <div>Age: {mom.age}</div>
+                    Age: {mom.age}
                   </div>
 
                   {/* Bio */}
@@ -165,7 +163,7 @@ const HallOfDogMoms = () => {
                     <h4 className="font-semibold text-government-navy mb-2 text-sm">Maternal Specialties:</h4>
                     <div className="flex flex-wrap gap-1">
                       {mom.specialties.map((specialty, idx) => (
-                        <span key={idx} className="px-2 py-1 bg-government-blue/10 text-government-blue text-xs rounded-full">
+                        <span className="px-2 py-1 bg-government-blue/10 text-government-blue text-xs rounded-full" key={idx}>
                           {specialty}
                         </span>
                       ))}
@@ -177,7 +175,7 @@ const HallOfDogMoms = () => {
                     <h4 className="font-semibold text-government-navy mb-2 text-sm">Achievements:</h4>
                     <ul className="space-y-1">
                       {mom.achievements.map((achievement, idx) => (
-                        <li key={idx} className="text-xs text-government-gray-dark flex items-start gap-2">
+                        <li className="text-xs text-government-gray-dark flex items-start gap-2" key={idx}>
                           <Crown className="h-3 w-3 text-alert-yellow mt-0.5 flex-shrink-0" />
                           {achievement}
                         </li>
