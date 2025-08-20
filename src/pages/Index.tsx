@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import { AlertTriangle, Shield, Phone, FileText } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import heroImage from '/assets/hero-dog.png';
 
 const Index = () => {
   return (
@@ -43,8 +42,8 @@ const Index = () => {
             </div>
             
             <div className="flex justify-center">
-              <img 
-                src={heroImage} 
+              <img
+                src="/nodogmoms-satire-project/assets/hero-dog.png" 
                 alt="Professional dog in medical attire representing CMDD awareness campaign" 
                 className="max-w-full h-auto rounded-lg shadow-2xl"
               />
