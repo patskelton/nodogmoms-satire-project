@@ -34,7 +34,7 @@ const Index = () => {
                     Take the Test
                   </Link>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-government-navy">
+                <Button asChild variant="hero" size="lg">
                   <Link to="/manifesto">
                     Read the Manifesto
                   </Link>
