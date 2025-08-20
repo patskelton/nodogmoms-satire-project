@@ -55,36 +55,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Disclaimer Section */}
-        <div className="border-t border-white/20 pt-8 mb-8">
-          <div className="bg-white/5 border border-white/10 rounded-lg p-6">
-            <h4 className="font-semibold mb-3 flex items-center gap-2">
-              <Heart className="h-4 w-4 text-alert-red" />
-              Important Disclaimer
-            </h4>
-            <p className="text-sm opacity-90 mb-4">
-              This website is a work of <strong>satirical fiction</strong>. CMDD is not a real medical condition. 
-              The "Institute for Maternal Canine Studies" does not exist. This site is intended as humorous 
-              commentary on language and terminology, not medical advice.
-            </p>
-            <p className="text-sm opacity-90">
-              <strong>We love dogs and the people who care for them.</strong> Whether you call yourself a 
-              dog parent, dog guardian, or anything else, what matters most is that you provide loving, 
-              responsible care for your pets.
-            </p>
-          </div>
-        </div>
-
-        {/* Adoption Notice */}
-        <div className="bg-alert-green/20 border border-alert-green/30 rounded-lg p-4 mb-8">
-          <div className="flex items-start gap-3">
-            <Heart className="h-5 w-5 text-alert-green flex-shrink-0 mt-0.5" />
-            <div className="text-sm">
-              <strong className="text-alert-green">Real Talk:</strong> Consider adopting from your local shelter. 
-              Real dogs need real homes with real people who will love them unconditionally—regardless of terminology.
-            </div>
-          </div>
-        </div>
+        {/* Sections removed per user request */}
 
         {/* Bottom Bar */}
         <div className="border-t border-white/20 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm opacity-75">
