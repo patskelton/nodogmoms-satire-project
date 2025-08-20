@@ -1,6 +1,6 @@
 import { Crown, Heart, Calendar, MapPin } from 'lucide-react';
-import daisyBeagle from '@/assets/daisy-beagle.png';
-import rubyBorderCollie from '@/assets/ruby-border-collie.png';
+import daisyBeagle from '/nodogmoms-satire-project/assets/daisy-beagle.png';
+import rubyBorderCollie from '/nodogmoms-satire-project/assets/ruby-border-collie.png';
 
 const HallOfDogMoms = () => {
   const dogMoms = [
@@ -111,19 +111,19 @@ const HallOfDogMoms = () => {
             <div>
               <h3 className="font-semibold mb-2">Biological Requirements:</h3>
               <ul className="space-y-1 text-sm opacity-90">
-                <li>• Must be female canine (Canis lupus familiaris)</li>
-                <li>• Must have successfully carried pregnancy to term</li>
-                <li>• Must have given birth to live puppies</li>
-                <li>• Must demonstrate maternal care behaviors</li>
+                • Must be female canine (Canis lupus familiaris)
+                • Must have successfully carried pregnancy to term
+                • Must have given birth to live puppies
+                • Must demonstrate maternal care behaviors
               </ul>
             </div>
             <div>
               <h3 className="font-semibold mb-2">Recognition Criteria:</h3>
               <ul className="space-y-1 text-sm opacity-90">
-                <li>• Verified birth records and documentation</li>
-                <li>• Demonstrated exceptional maternal behavior</li>
-                <li>• Positive impact on puppy development</li>
-                <li>• Nomination by veterinary professionals</li>
+                • Verified birth records and documentation
+                • Demonstrated exceptional maternal behavior
+                • Positive impact on puppy development
+                • Nomination by veterinary professionals
               </ul>
             </div>
           </div>
@@ -132,7 +132,7 @@ const HallOfDogMoms = () => {
         {/* Dog Moms Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {dogMoms.map((dog, index) => (
-            <div key={index} className="clinical-card hover:shadow-lg transition-shadow">
+            <div className="clinical-card hover:shadow-lg transition-shadow" key={index}>
               {/* Photo */}
               <div className="relative mb-4">
                 <img 
@@ -181,7 +181,7 @@ const HallOfDogMoms = () => {
                 <h4 className="font-semibold text-government-navy mb-2 text-sm">Specialties:</h4>
                 <div className="flex flex-wrap gap-1">
                   {dog.specialties.map((specialty, idx) => (
-                    <span key={idx} className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded">
+                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded" key={idx}>
                       {specialty}
                     </span>
                   ))}
@@ -193,7 +193,7 @@ const HallOfDogMoms = () => {
                 <h4 className="font-semibold text-government-navy mb-2 text-sm">Achievements:</h4>
                 <ul className="space-y-1">
                   {dog.achievements.map((achievement, idx) => (
-                    <li key={idx} className="text-xs text-government-gray-dark flex items-start gap-2">
+                    <li className="text-xs text-government-gray-dark flex items-start gap-2" key={idx}>
                       <Crown className="h-3 w-3 text-alert-yellow flex-shrink-0 mt-0.5" />
                       {achievement}
                     </li>
@@ -225,19 +225,19 @@ const HallOfDogMoms = () => {
             <div>
               <h3 className="font-semibold text-government-navy mb-2">Required Documentation:</h3>
               <ul className="space-y-1 text-government-gray-dark">
-                <li>• Veterinary birth records</li>
-                <li>• Professional behavioral assessment</li>
-                <li>• Photographic evidence of maternal care</li>
-                <li>• Health clearances and genetic testing</li>
+                • Veterinary birth records
+                • Professional behavioral assessment
+                • Photographic evidence of maternal care
+                • Health clearances and genetic testing
               </ul>
             </div>
             <div>
               <h3 className="font-semibold text-government-navy mb-2">Nomination Process:</h3>
               <ul className="space-y-1 text-government-gray-dark">
-                <li>• Submit via IMCS professional portal</li>
-                <li>• Peer review by veterinary board</li>
-                <li>• Site visit and verification process</li>
-                <li>• Annual recognition ceremony</li>
+                • Submit via IMCS professional portal
+                • Peer review by veterinary board
+                • Site visit and verification process
+                • Annual recognition ceremony
               </ul>
             </div>
           </div>
