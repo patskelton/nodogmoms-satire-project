@@ -1,5 +1,5 @@
 import { Heart, Phone } from 'lucide-react';
-import governmentSeal from '/assets/government-seal.png';
+import governmentSeal from '/nodogmoms-satire-project/assets/government-seal.png';
 
 const Footer = () => {
   return (
