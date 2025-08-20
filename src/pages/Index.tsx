@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { AlertTriangle, Shield, Phone, FileText } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import heroImage from '@/assets/hero-dog.png';
+import heroImage from '/nodogmoms-satire-project/assets/hero-dog.png';
 
 const Index = () => {
   return (
@@ -34,7 +34,7 @@ const Index = () => {
                     Take the Test
                   </Link>
                 </Button>
-                <Button asChild variant="hero" size="lg">
+                <Button asChild size="lg" variant="hero">
                   <Link to="/manifesto">
                     Read the Manifesto
                   </Link>
@@ -146,7 +146,7 @@ const Index = () => {
               <p className="text-sm text-government-gray mb-4">
                 Take our scientifically-designed quiz
               </p>
-              <Button asChild variant="outline" className="w-full">
+              <Button asChild className="w-full" variant="outline">
                 <Link to="/quiz">Start Quiz</Link>
               </Button>
             </div>
@@ -157,7 +157,7 @@ const Index = () => {
               <p className="text-sm text-government-gray mb-4">
                 Learn from documented CMDD cases
               </p>
-              <Button asChild variant="outline" className="w-full">
+              <Button asChild className="w-full" variant="outline">
                 <Link to="/case-studies">View Cases</Link>
               </Button>
             </div>
@@ -168,7 +168,7 @@ const Index = () => {
               <p className="text-sm text-government-gray mb-4">
                 Download educational materials
               </p>
-              <Button asChild variant="outline" className="w-full">
+              <Button asChild className="w-full" variant="outline">
                 <Link to="/resources">Get Resources</Link>
               </Button>
             </div>
