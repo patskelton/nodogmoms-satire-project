@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, AlertTriangle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import governmentSeal from '/assets/government-seal.png';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,7 +37,7 @@ const Navigation = () => {
             {/* Logo */}
             <div className="flex items-center space-x-3">
               <img 
-                src={governmentSeal} 
+                src="/nodogmoms-satire-project/assets/government-seal.png" 
                 alt="Institute for Maternal Canine Studies Official Seal" 
                 className="h-10 w-10"
               />
