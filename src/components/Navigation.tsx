@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, AlertTriangle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import governmentSeal from '@/assets/government-seal.png';
+import governmentSeal from '/nodogmoms-satire-project/assets/government-seal.png';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,7 +27,7 @@ const Navigation = () => {
       <div className="bg-alert-red text-white py-2 px-4">
         <div className="container mx-auto flex items-center justify-center gap-2 text-sm font-medium">
           <AlertTriangle className="h-4 w-4 flex-shrink-0" />
-          <span>ALERT: CMDD cases have increased 347% since 2019. Seek immediate clarity.</span>
+          ALERT: CMDD cases have increased 347% since 2019. Seek immediate clarity.
         </div>
       </div>
 
@@ -36,7 +36,7 @@ const Navigation = () => {
         <nav className="container mx-auto px-4 py-3">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link to="/" className="flex items-center gap-3">
+            <Link className="flex items-center gap-3" to="/">
               <img 
                 src={governmentSeal} 
                 alt="Institute for Maternal Canine Studies Seal" 
