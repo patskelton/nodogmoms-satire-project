@@ -43,7 +43,7 @@ const Navigation = () => {
               />
               <div className="flex flex-col">
                 <span className="text-lg font-bold text-government-navy">
-                  NoDogMoms.com
+                  NotADogMom.com
                 </span>
                 <span className="text-xs text-government-gray uppercase tracking-wider">
                   Official IMCS Resource
